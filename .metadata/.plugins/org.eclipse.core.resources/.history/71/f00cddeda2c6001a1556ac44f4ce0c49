@@ -1,0 +1,23 @@
+package br.com.casadocodigo.loja.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ProdutosController {
+	
+	@RequestMapping("produtos/form")
+	public String forme(){
+		
+		return "produtos/form";
+	}
+	
+	@RequestMapping("produtos/ok")
+	public String gravar(String titulo, String descricao, String paginas) {
+		System.out.println(titulo);
+		System.out.println(descricao);
+		System.out.println(paginas);
+		
+		return "produtos/ok";
+	}
+}
