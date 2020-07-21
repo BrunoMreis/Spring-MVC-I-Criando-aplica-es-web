@@ -36,8 +36,8 @@ public class JPAConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUsername("root");
         dataSource.setPassword("Root@10"); // modifique para a senha do seu banco
-        dataSource.setUrl("jdbc:mysql://localhost:3306/casadocodigo");
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/casadocodigo?serverTimezone=UTC");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         factoryBean.setDataSource(dataSource);
 
         Properties props = new Properties();

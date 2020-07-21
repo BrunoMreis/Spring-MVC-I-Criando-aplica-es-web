@@ -20,7 +20,7 @@ public class ProdutosController {
 		return "produtos/form";
 	}
 
-	@RequestMapping("produtos/ok")
+	@RequestMapping("/produtos")
 	public String gravar(Produto produto) {
 		System.out.println(produto);
 		produtoDAO.gravar(produto);
