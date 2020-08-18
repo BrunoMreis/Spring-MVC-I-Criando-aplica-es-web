@@ -1,0 +1,16 @@
+127.0.0.1 - - [24/Jul/2020:11:13:38 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:14:10 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 1078
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:14:10 -0300] "GET /favicon.ico HTTP/1.1" 404 774
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:14:44 -0300] "POST /casadocodigo/produtos HTTP/1.1" 200 229
+127.0.0.1 - - [24/Jul/2020:11:17:22 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:17:30 -0300] "POST /casadocodigo/produtos HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:19:10 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 1072
+127.0.0.1 - - [24/Jul/2020:11:29:29 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:29:30 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 580
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:29:35 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 580
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:29:40 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 580
+127.0.0.1 - - [24/Jul/2020:11:33:23 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:33:29 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 200 1066
+127.0.0.1 - - [24/Jul/2020:11:36:14 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:36:19 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 500 4089
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:11:36:20 -0300] "GET /casadocodigo/produtos/form HTTP/1.1" 500 4089

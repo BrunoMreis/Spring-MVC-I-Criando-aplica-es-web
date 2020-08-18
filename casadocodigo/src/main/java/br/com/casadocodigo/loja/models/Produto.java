@@ -1,27 +1,48 @@
 package br.com.casadocodigo.loja.models;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Integer id;
 	private String titulo;
 	private String descricao;
 	private int paginas;
+	private String sumarioPath;
 	
-	
-	private void Produto() { }
+	@DateTimeFormat(pattern = "dd/MM/yyy")
+	private Calendar dataDeLancamento;
 
-	public Produto(String titulo, String descricao, int paginas) {
-		super();
-		this.titulo = titulo;
-		this.descricao = descricao;
-		this.paginas = paginas;
+	@ElementCollection	
+	private List<Preco> precos = new ArrayList<Preco>();
+	
+	
+	public String getSumarioPath() {
+		return sumarioPath;
+	}
+
+	public void setSumarioPath(String sumarioPath) {
+		this.sumarioPath = sumarioPath;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getTitulo() {
@@ -48,11 +69,24 @@ public class Produto {
 		this.paginas = paginas;
 	}
 
-	@Override
-	public String toString() {
-		return "produto [titulo=" + titulo + ", descricao=" + descricao + ", paginas=" + paginas + "]";
+	public Calendar getDataDeLancamento() {
+		return dataDeLancamento;
 	}
-	
-	
-	
+
+	public void setDataDeLancamento(Calendar dataDeLancamento) {
+		this.dataDeLancamento = dataDeLancamento;
+	}
+
+	public List<Preco> getPrecos() {
+		return precos;
+	}
+
+	public void setPrecos(List<Preco> precos) {
+		this.precos = precos;
+	}
+
+
+
+ 
+
 }
